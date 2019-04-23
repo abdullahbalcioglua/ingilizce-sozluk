@@ -1,0 +1,9 @@
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\bin\Debug\ingilizce_sozluk.exe.config
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\bin\Debug\ingilizce_sozluk.exe
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\bin\Debug\ingilizce_sozluk.pdb
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.csprojResolveAssemblyReference.cache
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.Form1.resources
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.Properties.Resources.resources
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.csproj.GenerateResource.Cache
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.exe
+c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.pdb
