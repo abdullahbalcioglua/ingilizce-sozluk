@@ -7,4 +7,3 @@ c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_s
 c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.csproj.GenerateResource.Cache
 c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.exe
 c:\users\acer\documents\visual studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.pdb
-C:\Users\acer\Documents\Visual Studio 2015\Projects\ingilizce_sozluk\ingilizce_sozluk\obj\Debug\ingilizce_sozluk.Form2.resources
