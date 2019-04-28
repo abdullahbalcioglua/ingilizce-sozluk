@@ -13,73 +13,164 @@ namespace ingilizce_sozluk
 {
     public partial class Form2 : Form
     {
+
+        OleDbConnection baglantim = new OleDbConnection("provider=Microsoft.ACE.OleDb.12.0;Data Source=veri_sozluk.accdb");
+        OleDbCommand komut = new OleDbCommand();
+        OleDbDataAdapter adtr = new OleDbDataAdapter();
+        DataSet ds = new DataSet();
+
         public Form2()
         {
             InitializeComponent();
         }
 
-        OleDbConnection baglantim = new OleDbConnection("provider=Microsoft.ACE.OleDb.12.0;Data Source=" + Application.StartupPath + "\\veri_sozluk.accdb");
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
+          
+                komut = new OleDbCommand();
+                baglantim.Open();
+                komut.Connection = baglantim;
+                komut.CommandText = "update ingturkce set turkce= ' " + textBox2.Text + " ' , where ingilize= ' " + textBox1.Text + " ' ";
+                komut.ExecuteNonQuery();
+                komut.Dispose();
+                baglantim.Close();
+                ds.Clear();
+
+                /*
                 baglantim.Open();
                 OleDbCommand guncelleKomutu = new OleDbCommand("update ingturkce set turkce=' " + textBox2.Text + " 'where ingilize=' " + textBox1.Text + " '", baglantim);
                 guncelleKomutu.ExecuteNonQuery();
                 baglantim.Close();
                 MessageBox.Show("sozluk veri tabanina guncellendi", "veri tabani islemleri");
                 textBox1.Clear();
-                textBox2.Clear();
-            }
-            catch(Exception aciklama)
-            {
-                MessageBox.Show(aciklama.Message, "veri tabani islemleri");
-            }
+                textBox2.Clear(); */
+            
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+                
+                komut.Connection = baglantim;
+                komut.CommandText = "insert into ingturkce(ingilize,turkce) values(' " + textBox1.Text + " ' ,'" + textBox2.Text + " ')";
                 baglantim.Open();
-                OleDbCommand ekleKomutu = new OleDbCommand("insert into ingturkce(ingilize,turkce)values(' " + textBox1.Text + " ' ,'" + textBox2.Text + " ')", baglantim);
-                ekleKomutu.ExecuteNonQuery();
+                komut.ExecuteNonQuery();
+                komut.Dispose();
                 baglantim.Close();
-                MessageBox.Show("sozcuk veri tabanina eklendi");
-                textBox1.Clear();
-                textBox2.Clear();
-            }
+                ds.Clear();
 
-            catch(Exception aciklama)
-            {
-                MessageBox.Show(aciklama.Message, "veri tabani islemleri");
-                baglantim.Close();
-            }
+                /* baglantim.Open();
+                 OleDbCommand ekleKomutu = new OleDbCommand("insert into ingturkce(ingilize,turkce)values(' " + textBox1.Text + " ' ,'" + textBox2.Text + " ')", baglantim);
+                 ekleKomutu.ExecuteNonQuery();
+                 baglantim.Close();
+                 MessageBox.Show("sozcuk veri tabanina eklendi");
+                 textBox1.Clear();
+                 textBox2.Clear(); */
+            
+
+            
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try
-            {
                 baglantim.Open();
-                OleDbCommand silKomutu = new OleDbCommand("delete from ingturkce where ingilize='"+textBox1.Text+"'", baglantim);
+                komut.Connection = baglantim;
+                komut.CommandText = "delete from ingturkce where ingilize =" + textBox1.Text + "";
+                komut.ExecuteNonQuery();
+                komut.Dispose();
+                baglantim.Close();
+                ds.Clear();
+                /*baglantim.Open();
+                OleDbCommand silKomutu = new OleDbCommand("delete from ingturkce where ingilize= "+ textBox1.Text + " " , baglantim);
                 silKomutu.ExecuteNonQuery();
                 baglantim.Close();
                 MessageBox.Show("sozcuk veri tabanindan silindi", "veri tabani islemleri");
                 textBox1.Clear();
-                textBox2.Clear(); 
-            }
-            catch(Exception aciklama)
-            {
-                MessageBox.Show(aciklama.Message, "veri tabani islemleri");
-                baglantim.Close();
-            }
+                textBox2.Clear(); */
+            
 
         }
     }
